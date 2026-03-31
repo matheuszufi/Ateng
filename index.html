@@ -196,6 +196,22 @@
             slides[current].classList.add('active');
         }, 5000);
 
+        // Checkbox toggle — JS-driven para compatibilidade com iOS Safari
+        document.querySelectorAll('.checkbox-container').forEach(function(container) {
+            var label = container.querySelector('.checkbox-label');
+            var input = container.querySelector('.task-checkbox');
+            if (label && input) {
+                label.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    input.checked = !input.checked;
+                    if (input.checked) {
+                        container.classList.add('checked');
+                    } else {
+                        container.classList.remove('checked');
+                    }
+                });
+            }
+        });
     </script>
 
 </body>
