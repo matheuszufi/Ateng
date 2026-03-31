@@ -243,17 +243,24 @@
 }
 
 .task-checkbox {
-    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .checkbox-label {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
     color: #374151;
     font-weight: 400;
+    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     padding: 8px;
     border-radius: 8px;
@@ -268,15 +275,22 @@
     position: relative;
     width: 22px;
     height: 22px;
+    min-width: 22px;
+    min-height: 22px;
     border: 2px solid #d1d5db;
     border-radius: 6px;
     margin-right: 12px;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     background: #ffffff;
+    display: -webkit-flex;
     display: flex;
-    align-items: start;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
     overflow: visible;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
 }
 
@@ -287,7 +301,9 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #46a59b 0%, #128077 100%);
+    -webkit-transform: scale(0);
     transform: scale(0);
+    -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     border-radius: 4px;
     opacity: 0;
@@ -297,7 +313,9 @@
     position: relative;
     z-index: 2;
     opacity: 0;
+    -webkit-transform: scale(0.3) rotate(20deg);
     transform: scale(0.3) rotate(20deg);
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -305,6 +323,8 @@
     width: 14px;
     height: 14px;
     fill: white;
+    display: block;
+    -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
 }
 
@@ -316,12 +336,14 @@
     height: 0;
     background: rgba(70, 165, 155, 0.4);
     border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
     pointer-events: none;
 }
 
 .checkbox-text {
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -352,17 +374,21 @@
 }
 
 .task-checkbox:checked + .checkbox-label .checkbox-fill {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
 
 .task-checkbox:checked + .checkbox-label .checkmark {
     opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
     transform: scale(1) rotate(0deg);
+    -webkit-animation: checkPop 0.3s ease-out 0.2s;
     animation: checkPop 0.3s ease-out 0.2s;
 }
 
 .task-checkbox:checked + .checkbox-label .success-ripple {
+    -webkit-animation: rippleSuccess 0.6s ease-out;
     animation: rippleSuccess 0.6s ease-out;
 }
 
@@ -375,15 +401,26 @@
 }
 
 .checkbox-label:active .checkbox-box {
+    -webkit-transform: scale(0.95);
     transform: scale(0.95);
 }
 
+@-webkit-keyframes checkPop {
+    0% { -webkit-transform: scale(1) rotate(0deg); transform: scale(1) rotate(0deg); }
+    50% { -webkit-transform: scale(1.2) rotate(-5deg); transform: scale(1.2) rotate(-5deg); }
+    100% { -webkit-transform: scale(1) rotate(0deg); transform: scale(1) rotate(0deg); }
+}
 @keyframes checkPop {
     0% { transform: scale(1) rotate(0deg); }
     50% { transform: scale(1.2) rotate(-5deg); }
     100% { transform: scale(1) rotate(0deg); }
 }
 
+@-webkit-keyframes rippleSuccess {
+    0% { width: 0; height: 0; opacity: 0.6; }
+    70% { width: 50px; height: 50px; opacity: 0.3; }
+    100% { width: 60px; height: 60px; opacity: 0; }
+}
 @keyframes rippleSuccess {
     0% { width: 0; height: 0; opacity: 0.6; }
     70% { width: 50px; height: 50px; opacity: 0.3; }
