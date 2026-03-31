@@ -255,11 +255,26 @@
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .dor-cta-btn:hover {
     background: rgba(16, 172, 157, 0.1);
+}
+
+.dor-video-wrapper {
+    align-self: stretch;
+    width: 300px;
+    min-width: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.dor-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .dor-checklist {
@@ -505,11 +520,18 @@
     }
 
     .dor-cta-btn {
-        font-size: 20px;
+        font-size: 22px;
         padding: 16px 24px;
-        white-space: normal;
-        text-align: center;
         width: 100%;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .dor-video-wrapper {
+        width: 100%;
+        min-width: unset;
+        height: 200px;
+                margin-top: 24px;
     }
 
     .dor-fechamento {
