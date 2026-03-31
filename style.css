@@ -77,7 +77,7 @@
 .hero-title em {
     font-family: 'Marcellus', serif;
     font-style: italic;
-    background: linear-gradient(to right, #128077, #15e6d1, #128077);
+    background: linear-gradient(to right, #128077, #0f9689, #128077);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -88,6 +88,12 @@
     align-items: center;
     gap: 30px;
     margin-top: 10px;
+}
+
+.hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hero-stats {
@@ -156,6 +162,14 @@
     line-height: 1.4;
 }
 
+.hero-microcopy {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+
 /* Botão hero */
 .hero-btn {
     font-family: 'Space Grotesk', sans-serif;
@@ -175,6 +189,118 @@
 .hero-btn:hover {
     background: #fff;
     color: #111;
+}
+
+/* Seção Identificação da Dor */
+.dor {
+    padding: 80px 80px;
+    margin-top: 80px;
+    background-color: rgba(24, 24, 24, 0.194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+
+.dor-headline {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    background: linear-gradient(to bottom, #212121, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 32px;
+}
+
+.dor-headline em {
+    font-family: 'Marcellus', serif;
+    font-style: italic;
+    font-weight: 600;
+    background: linear-gradient(to right, #128077, #10ac9d, #128077);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 900px;
+}
+
+.dor-card {
+    flex: 1 1 160px;
+    max-width: 200px;
+    background: rgba(39, 39, 39, 0.04);
+    border: 1px solid rgba(25, 25, 25, 0.08);
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.dor-card:hover {
+    border-color: #46a59b;
+}
+
+.dor-icon {
+    font-size: 22px;
+    color: #46a59b;
+    line-height: 1;
+}
+
+.dor-card p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:linear-gradient(to bottom, #212121, #454545);
+    line-height: 1.5;
+}
+
+.dor-fechamento {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: linear-gradient(to bottom, #212121, #454545);
+    margin-top: 36px;
+    letter-spacing: 0.5px;
+}
+
+.dor-fechamento em {
+    font-family: 'Marcellus', serif;
+    font-style: italic;
+    color: #46a59b;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .dor {
+        padding: 60px 24px;
+    }
+
+    .dor-headline {
+        font-size: 36px;
+    }
+
+    .dor-grid {
+        gap: 12px;
+    }
+
+    .dor-card {
+        flex: 1 1 calc(50% - 12px);
+        max-width: none;
+    }
+
+    .dor-fechamento {
+        font-size: 30px;
+    }
 }
 
 .projetos {
