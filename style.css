@@ -263,7 +263,7 @@
     }
 
     .hero-title {
-        font-size: clamp(36px, 14vw, 64px);
+        font-size: clamp(36px, 12vw, 46px);
         word-break: break-word;
         overflow-wrap: break-word;
         line-height: 1;
