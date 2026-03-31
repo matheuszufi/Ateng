@@ -260,7 +260,7 @@
     font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color:linear-gradient(to bottom, #212121, #454545);
+    color: #333;
     line-height: 1.5;
 }
 
@@ -268,7 +268,7 @@
     font-family: 'Space Grotesk', sans-serif;
     font-size: 40px;
     font-weight: 400;
-    color: linear-gradient(to bottom, #212121, #454545);
+    color: #333;
     margin-top: 36px;
     letter-spacing: 0.5px;
 }
@@ -305,7 +305,10 @@
 
 /* ========== VIRADA / SOLUÇÃO ========== */
 .virada {
-    background: url('images/projeto-background.png') center/cover no-repeat;
+    background-image: url('images/projeto-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
