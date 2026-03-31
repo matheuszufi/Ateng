@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="images/HERO-BG.mp4" type="video/mp4">
+        </video>
+        <img src="images/ateng-logo-white.png" alt="Ateng Logo" class="hero-logo">
+        <div class="hero-content">
+            <span class="hero-subtitle">ENGENHARIA DE PRECISÃO</span>
+            <h1 class="hero-title">Transformando <em>cálculo </em>em<br> <em>segurança </em> real.</h1>
+            <div class="hero-cta">
+                <a href="#" class="hero-btn">SOLICITAR ORÇAMENTO</a>
+                <div class="hero-stats">
+                    <div class="stats-carousel">
+                        <div class="stats-slide">
+                            <span class="hero-stats-number">130+</span>
+                            <span class="hero-stats-label">PROJETOS ENTREGUES</span>
+                        </div>
+                        <div class="stats-slide">
+                            <span class="hero-stats-number">5</span>
+                            <span class="hero-stats-label">MÉDIA DE INTERFERÊNCIAS<br>CRÍTICAS POR PROJETO</span>
+                        </div>
+                        <div class="stats-slide">
+                            <span class="hero-stats-label">EM TODO BRASIL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos">
+  
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <img src="images/projects/estrutura-concreto-armado.jpg" alt="Projeto Estrutural" class="projeto-image">
+                <h3 class="projeto-title">Estrutural</h3>
+                <p class="projeto-description">Projetos estruturais com cálculos precisos, garantindo segurança e durabilidade para sua edificação.</p>
+            </div>
+            <div class="projeto-card">
+                <img src="images/projects/instalacoes-hidrossanitarias.png" alt="Projeto Hidrossanitário" class="projeto-image">
+                <h3 class="projeto-title">Hidrossanitário</h3>
+                <p class="projeto-description">Dimensionamento completo de sistemas hidráulicos e sanitários, com eficiência e conformidade técnica.</p>
+            </div>
+            <div class="projeto-card">
+                <img src="images/projects/instalacoes-eletricas.png" alt="Projeto Elétrico" class="projeto-image">
+                <h3 class="projeto-title">Elétrico</h3>
+                <p class="projeto-description">Projetos elétricos seguros e otimizados, atendendo às normas vigentes e às necessidades do seu empreendimento.</p>
+            </div>
+        </div>
+        <a href="#" class="projetos-btn">ORÇAR UM PROJETO</a>
+    </section>
+        <div class="galeria-esquerda">
+            <h2 class="section-title">Projetos Realizados</h2>
+        </div>
+        <div class="galeria-direita">
+            <img src="images/my-projects/area-de-lazer-MC.jpg" alt="Área de Lazer MC" class="galeria-slide active">
+            <img src="images/my-projects/espa%C3%A7o-de-lazer-MD.jpg" alt="Espaço de Lazer MD" class="galeria-slide">
+            <img src="images/my-projects/hospital-rj.jpg" alt="Hospital RJ" class="galeria-slide">
+            <img src="images/my-projects/residencia-CB.jpg" alt="Residência CB" class="galeria-slide">
+            <img src="images/my-projects/residencia-GV.jpg" alt="Residência GV" class="galeria-slide">
+            <img src="images/my-projects/residencia-JS.jpg" alt="Residência JS" class="galeria-slide">
+        </div>
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll('.galeria-slide');
+        let current = 0;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 5000);
+    </script>
+
+</body>
+</html>

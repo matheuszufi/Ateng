@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: #0000008b;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding: 60px 80px;
+    box-shadow: 4px 4px 12px #000000;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #46a59b;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.15;
+}
+
+.hero-title em {
+    font-family: 'Marcellus', serif;
+    font-style: italic;
+    background: linear-gradient(to right, #128077, #15e6d1, #128077);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.hero-stats {
+    position: relative;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.stats-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.stats-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.stats-slide:nth-child(1) {
+    animation: statsFade 9s infinite;
+    animation-delay: 0s;
+}
+.stats-slide:nth-child(2) {
+    animation: statsFade 9s infinite;
+    animation-delay: 3s;
+}
+.stats-slide:nth-child(3) {
+    animation: statsFade 9s infinite;
+    animation-delay: 6s;
+}
+
+@keyframes statsFade {
+    0% { opacity: 0; transform: translateY(20px); }
+    5% { opacity: 1; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(0); }
+    35% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.hero-stats-number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero-stats-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+/* Botão hero */
+.hero-btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 14px 32px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+.projetos {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+}
+
+.projetos-grid {
+    display: flex;
+    gap: 0;
+    width: 100%;
+}
+
+.projeto-card {
+    flex: 1;
+    background: #fff;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.projeto-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #111;
+    padding: 20px 20px 8px;
+}
+
+.projeto-description {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.6;
+    padding: 0 20px 20px;
+}
+
+.projetos-btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #111;
+    background: transparent;
+    border: 1px solid #111;
+    padding: 14px 32px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.projetos-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 24px;
+    }
+
+    .hero-logo {
+        top: 20px;
+        left: 24px;
+        height: 54px;
+    }
+
+    .hero-title {
+        font-size: clamp(36px, 14vw, 64px);
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-stats {
+        width: 100%;
+    }
+
+    .projetos-grid {
+        flex-direction: column;
+    }
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria-esquerda {
+        padding: 40px 24px;
+    }
+
+    .galeria-direita {
+        min-height: 300px;
+    }
+}
+
+/* Seção Projetos Realizados */
+.galeria {
+    display: flex;
+    min-height: 500px;
+    background-color: #e7e7e7;
+}
+
+.galeria-esquerda {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.galeria .section-title {
+    color: #111;
+}
+
+.galeria-direita {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.galeria-slide.active {
+    opacity: 1;
+}
