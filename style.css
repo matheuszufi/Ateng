@@ -265,9 +265,9 @@
     align-items: center;
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #374151;
-    font-weight: 400;
+    font-weight: 200;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     padding: 8px;
