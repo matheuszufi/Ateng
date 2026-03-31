@@ -266,6 +266,7 @@
         font-size: clamp(36px, 14vw, 64px);
         word-break: break-word;
         overflow-wrap: break-word;
+        line-height: 1;
     }
 
     .hero-subtitle {
