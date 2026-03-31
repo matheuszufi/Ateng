@@ -106,12 +106,8 @@
                 </div>
                 </div>
             </div>
-            <a href="#" class="dor-cta-btn">RESOLVER MEU PROBLEMA</a>
-            <div class="dor-video-wrapper">
-                <video class="dor-video" autoplay muted loop playsinline>
-                    <source src="images/ateng-video-1.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div class="dor-divider"></div>
+            <a href="#" class="dor-cta-btn">FALAR COM NOSSA EQUIPE</a>
         </div>
         <p class="dor-fechamento">É exatamente isso que um <em>projeto bem definido</em> evita.</p>
     </section>
@@ -159,51 +155,9 @@
         </div>
     </section>
 
-    <section class="projetos">
-  
-        <div class="projetos-grid">
-            <div class="projeto-card">
-                <img src="images/projects/estrutura-concreto-armado.jpg" alt="Projeto Estrutural" class="projeto-image">
-                <h3 class="projeto-title">Estrutural</h3>
-                <p class="projeto-description">Projetos estruturais com cálculos precisos, garantindo segurança e durabilidade para sua edificação.</p>
-            </div>
-            <div class="projeto-card">
-                <img src="images/projects/instalacoes-hidrossanitarias.png" alt="Projeto Hidrossanitário" class="projeto-image">
-                <h3 class="projeto-title">Hidrossanitário</h3>
-                <p class="projeto-description">Dimensionamento completo de sistemas hidráulicos e sanitários, com eficiência e conformidade técnica.</p>
-            </div>
-            <div class="projeto-card">
-                <img src="images/projects/instalacoes-eletricas.png" alt="Projeto Elétrico" class="projeto-image">
-                <h3 class="projeto-title">Elétrico</h3>
-                <p class="projeto-description">Projetos elétricos seguros e otimizados, atendendo às normas vigentes e às necessidades do seu empreendimento.</p>
-            </div>
-        </div>
-        <a href="#" class="projetos-btn">ORÇAR UM PROJETO</a>
-    </section>
 
-    <section class="galeria">
-        <div class="galeria-esquerda">
-            <h2 class="section-title">Projetos Realizados</h2>
-        </div>
-        <div class="galeria-direita">
-            <img src="images/my-projects/area-de-lazer-MC.jpg" alt="Área de Lazer MC" class="galeria-slide active">
-            <img src="images/my-projects/espa%C3%A7o-de-lazer-MD.jpg" alt="Espaço de Lazer MD" class="galeria-slide">
-            <img src="images/my-projects/hospital-rj.jpg" alt="Hospital RJ" class="galeria-slide">
-            <img src="images/my-projects/residencia-CB.jpg" alt="Residência CB" class="galeria-slide">
-            <img src="images/my-projects/residencia-GV.jpg" alt="Residência GV" class="galeria-slide">
-            <img src="images/my-projects/residencia-JS.jpg" alt="Residência JS" class="galeria-slide">
-        </div>
-    </section>
 
     <script>
-        const slides = document.querySelectorAll('.galeria-slide');
-        let current = 0;
-        setInterval(() => {
-            slides[current].classList.remove('active');
-            current = (current + 1) % slides.length;
-            slides[current].classList.add('active');
-        }, 5000);
-
         // Checkbox toggle — JS-driven para compatibilidade com iOS Safari
         document.querySelectorAll('.checkbox-container').forEach(function(container) {
             var label = container.querySelector('.checkbox-label');

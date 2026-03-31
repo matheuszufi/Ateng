@@ -227,55 +227,50 @@
 .dor-content {
     position: relative;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
+    gap: 32px;
 }
 
 .dor-checklist-wrapper {
     position: relative;
     width: auto;
     display: inline-block;
-    background: rgba(70, 165, 155, 0.9);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(70, 165, 155, 0.5);
+    /* background: rgba(70, 165, 155, 0.9); */
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); */
+    /* border: 1px solid rgba(70, 165, 155, 0.5); */
     z-index: 1;
 }
 
 .dor-cta-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 32px;
-    background: transparent;
-    border: 2px solid #10ac9d;
-    color: #10ac9d;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    color: #111;
+    background: transparent;
+    border: 1px solid #111;
+    padding: 14px 32px;
     text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
     transition: all 0.3s ease;
-    /* white-space: nowrap; */
+    align-self: center;
+    white-space: nowrap;
 }
 
 .dor-cta-btn:hover {
-    background: rgba(16, 172, 157, 0.1);
+    background: #111;
+    color: #fff;
 }
 
-.dor-video-wrapper {
+.dor-divider {
+    width: 1px;
     align-self: stretch;
-    width: 300px;
-    min-width: 200px;
-    overflow: hidden;
-    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.15);
 }
 
-.dor-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
+
 
 .dor-checklist {
     display: flex;
@@ -515,24 +510,22 @@
         align-items: center;
     }
 
+    .dor-cta-btn {
+        font-size: 12px;
+        padding: 12px 24px;
+    }
+
+    .dor-divider {
+        width: auto;
+        height: 1px;
+        align-self: auto;
+    }
+
     /* .dor-checklist-wrapper {
         margin-left: 24px;
     } */
 
-    .dor-cta-btn {
-        font-size: 22px;
-        padding: 16px 24px;
-        width: 100%;
-        text-align: center;
-        margin-top: 24px;
-    }
 
-    .dor-video-wrapper {
-        width: 100%;
-        min-width: unset;
-        height: 200px;
-                margin-top: 24px;
-    }
 
     .dor-fechamento {
         font-size: 30px;
@@ -783,80 +776,6 @@
     }
 }
 
-.projetos {
-    padding: 80px 0;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-}
-
-.section-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: #111;
-}
-
-.projetos-grid {
-    display: flex;
-    gap: 0;
-    width: 100%;
-}
-
-.projeto-card {
-    flex: 1;
-    background: #fff;
-    /* border-radius: 12px; */
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-.projeto-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.projeto-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    color: #111;
-    padding: 20px 20px 8px;
-}
-
-.projeto-description {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    color: #555;
-    line-height: 1.6;
-    padding: 0 20px 20px;
-}
-
-.projetos-btn {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #111;
-    background: transparent;
-    border: 1px solid #111;
-    padding: 14px 32px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 40px;
-}
-
-.projetos-btn:hover {
-    background: #111;
-    color: #fff;
-}
-
 @media (max-width: 768px) {
     .hero {
         padding: 40px 24px;
@@ -895,60 +814,5 @@
     .hero-stats {
         width: 100%;
     }
-
-    .projetos-grid {
-        flex-direction: column;
-    }
-
-    .galeria {
-        flex-direction: column;
-    }
-
-    .galeria-esquerda {
-        padding: 40px 24px;
-    }
-
-    .galeria-direita {
-        min-height: 300px;
-    }
 }
 
-/* Seção Projetos Realizados */
-.galeria {
-    display: flex;
-    min-height: 500px;
-    background-color: #e7e7e7;
-}
-
-.galeria-esquerda {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-}
-
-.galeria .section-title {
-    color: #111;
-}
-
-.galeria-direita {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-
-.galeria-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-
-.galeria-slide.active {
-    opacity: 1;
-}
