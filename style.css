@@ -193,6 +193,7 @@
 
 /* Seção Identificação da Dor */
 .dor {
+    position: relative;
     padding: 60px 0;
     margin-top: 80px;
     background-color: rgba(24, 24, 24, 0.194);
@@ -200,6 +201,37 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+}
+
+.dor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('images/at-header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.dor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(227, 227, 227, 0.85), rgb(211, 211, 211));
+    z-index: 1;
+}
+
+.dor > * {
+    position: relative;
+    z-index: 2;
 }
 
 
