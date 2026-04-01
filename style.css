@@ -264,6 +264,24 @@
     color: #fff;
 }
 
+.dor-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.dor-promo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    color: #888;
+    max-width: 240px;
+    text-align: center;
+    line-height: 1.4;
+}
+
 .dor-divider {
     width: 1px;
     align-self: stretch;
@@ -513,6 +531,10 @@
     .dor-cta-btn {
         font-size: 12px;
         padding: 12px 24px;
+    }
+
+    .dor-promo {
+        max-width: 100%;
     }
 
     .dor-divider {
@@ -813,6 +835,49 @@
 
     .hero-stats {
         width: 100%;
+    }
+}
+
+/* ========== WHATSAPP WIDGET ========== */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+.whatsapp-widget:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-widget {
+        bottom: 16px;
+        right: 16px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
     }
 }
 
