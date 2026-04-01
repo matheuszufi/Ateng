@@ -588,10 +588,6 @@
 
 /* ========== VIRADA / SOLUÇÃO ========== */
 .virada {
-    background-image: url('images/projeto-background.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,6 +595,17 @@
     text-align: center;
     position: relative;
     box-shadow: 4px 4px 12px #0000008b;
+    overflow: hidden;
+}
+
+.virada-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .virada::before {
@@ -608,8 +615,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.85);
-    z-index: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1;
 }
 
 .virada-inner {
@@ -618,7 +625,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     gap: 16px;
 }
 
