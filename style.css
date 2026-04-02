@@ -1,7 +1,7 @@
 ﻿@font-face {
     font-family: 'CODE';
     src: url('fonts/CODE Light.otf') format('opentype');
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -72,7 +72,7 @@
 .hero-subtitle {
     font-family: 'CODE', sans-serif;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 700;
     color: #ffffff;
     letter-spacing: 2px;
 }
@@ -80,7 +80,7 @@
 .hero-title {
     font-family: 'CODE', sans-serif;
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,7 +187,7 @@
 .hero-stats-label {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.4;
@@ -196,7 +196,7 @@
 .hero-microcopy {
     font-family: 'CODE', sans-serif;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
 }
@@ -793,7 +793,7 @@
 .virada-tag {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 3px;
 }
@@ -801,7 +801,7 @@
 .virada-headline {
     font-family: 'CODE', sans-serif;
     font-size: 52px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -822,7 +822,7 @@
 .virada-sub {
     font-family: 'CODE', sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.5px;
 }
@@ -872,7 +872,7 @@
 .diferenciais-tag {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 3px;
     display: block;
@@ -882,7 +882,7 @@
 .diferenciais-headline {
     font-family: 'CODE', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #212121, #454545);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -904,7 +904,7 @@
 .diferenciais-sub {
     font-family: 'CODE', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 700;
     color: #444;
 }
 
@@ -939,7 +939,7 @@
 .dif-card-number {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 2px;
 }
@@ -947,7 +947,7 @@
 .dif-card-body h3 {
     font-family: 'CODE', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #111;
     margin: 8px 0;
 }
@@ -955,7 +955,7 @@
 .dif-card-body p {
     font-family: 'CODE', sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 700;
     color: #333;
     line-height: 1.6;
 }
@@ -1057,7 +1057,7 @@
 .avaliacoes-tag {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 3px;
     display: block;
@@ -1067,7 +1067,7 @@
 .avaliacoes-headline {
     font-family: 'CODE', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1110,7 +1110,7 @@
 .avaliacoes-nota {
     font-family: 'CODE', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1169,7 +1169,7 @@
     justify-content: center;
     font-family: 'CODE', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
     flex-shrink: 0;
 }
@@ -1183,7 +1183,7 @@
 .avaliacao-nome {
     font-family: 'CODE', sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     color: #eee;
 }
 
@@ -1201,7 +1201,7 @@
 .avaliacao-texto {
     font-family: 'CODE', sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.6;
 }
@@ -1290,7 +1290,7 @@
 .cta-final-headline {
     font-family: 'CODE', sans-serif;
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1367,7 +1367,7 @@
 .bloco-final-titulo {
     font-family: 'CODE', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to bottom, #212121, #454545);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1378,7 +1378,7 @@
 .bloco-final-subtitulo {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -1410,7 +1410,7 @@
 .bloco-final-info-label {
     font-family: 'CODE', sans-serif;
     font-size: 11px;
-    font-weight: 200;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1419,7 +1419,7 @@
 .bloco-final-info-value {
     font-family: 'CODE', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 700;
     color: #222;
 }
 
@@ -1462,14 +1462,14 @@
 .bloco-final-nome {
     font-family: 'CODE', sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     color: #111;
 }
 
 .bloco-final-cargo {
     font-family: 'CODE', sans-serif;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 700;
     color: #46a59b;
     letter-spacing: 1px;
 }
@@ -1484,7 +1484,7 @@
 .bloco-final-bio p {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 700;
     color: #555;
     line-height: 1.5;
 }
@@ -1501,7 +1501,7 @@
 .bloco-final-stats li {
     font-family: 'CODE', sans-serif;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 700;
     color: #333;
     line-height: 1.5;
     padding-left: 16px;
@@ -1624,7 +1624,7 @@
 .footer-copy {
     font-family: 'CODE', sans-serif;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.4);
     letter-spacing: 0.5px;
 }
