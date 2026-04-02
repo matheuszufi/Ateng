@@ -715,7 +715,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -741,7 +741,7 @@
     font-family: 'CODE', sans-serif;
     font-size: 52px;
     font-weight: 600;
-    background: linear-gradient(to bottom, #212121, #454545);
+    background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -762,7 +762,7 @@
     font-family: 'CODE', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    color: #444;
+    color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.5px;
 }
 
@@ -770,9 +770,9 @@
     font-family: 'CODE', sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: #111;
+    color: #fff;
     background: transparent;
-    border: 1px solid #111;
+    border: 1px solid #fff;
     padding: 14px 32px;
     text-decoration: none;
     letter-spacing: 2px;
@@ -783,8 +783,8 @@
 }
 
 .virada-btn:hover {
-    background: #111;
-    color: #fff;
+    background: #fff;
+    color: #111;
 }
 
 .virada-line {
@@ -1202,6 +1202,375 @@
     .whatsapp-icon {
         width: 24px;
         height: 24px;
+    }
+}
+
+/* ========== CTA FINAL ========== */
+.cta-final {
+    padding: 100px 40px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.cta-final-inner {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.cta-final-headline {
+    font-family: 'CODE', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.cta-final-btn {
+    font-family: 'CODE', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 16px 40px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-final-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+@media (max-width: 768px) {
+    .cta-final {
+        padding: 70px 24px;
+    }
+
+    .cta-final-headline {
+        font-size: 30px;
+    }
+
+    .cta-final-btn {
+        font-size: 13px;
+        padding: 14px 28px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ========== BLOCO FINAL ========== */
+.bloco-final {
+    padding: 0 0 0;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+
+.bloco-final-header {
+    padding: 80px 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.bloco-final-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bloco-final-logo {
+    height: 36px;
+    margin-bottom: 8px;
+    filter: invert(1);
+}
+
+.bloco-final-titulo {
+    font-family: 'CODE', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #212121, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.bloco-final-subtitulo {
+    font-family: 'CODE', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: #46a59b;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.bloco-final-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 40px 40px 80px;
+}
+
+/* ESQUERDA — Contato */
+.bloco-final-contato {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloco-final-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.bloco-final-info-label {
+    font-family: 'CODE', sans-serif;
+    font-size: 11px;
+    font-weight: 200;
+    color: #46a59b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bloco-final-info-value {
+    font-family: 'CODE', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #222;
+}
+
+.bloco-final-btn {
+    font-family: 'CODE', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #111;
+    background: transparent;
+    border: 1px solid #111;
+    padding: 14px 28px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+.bloco-final-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* CENTRO — Sobre */
+.bloco-final-sobre {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 40px;
+}
+
+.bloco-final-nome {
+    font-family: 'CODE', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+}
+
+.bloco-final-cargo {
+    font-family: 'CODE', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #46a59b;
+    letter-spacing: 1px;
+}
+
+.bloco-final-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.bloco-final-bio p {
+    font-family: 'CODE', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.5;
+}
+
+.bloco-final-stats {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.bloco-final-stats li {
+    font-family: 'CODE', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 16px;
+    position: relative;
+}
+
+.bloco-final-stats li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    background: #46a59b;
+    border-radius: 50%;
+}
+
+.bloco-final-socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.bloco-final-social {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.bloco-final-social:hover {
+    border-color: #46a59b;
+    color: #46a59b;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* DIREITA — Foto */
+.bloco-final-foto {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bloco-final-foto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .bloco-final-header {
+        padding: 60px 24px 24px;
+    }
+
+    .bloco-final-titulo {
+        font-size: 28px;
+    }
+
+    .bloco-final-inner {
+        flex-direction: column;
+        padding: 24px 24px 60px;
+        gap: 40px;
+    }
+
+    .bloco-final-sobre {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 24px 0;
+    }
+
+    .bloco-final-btn {
+        align-self: stretch;
+    }
+
+    .bloco-final-foto {
+        order: -1;
+    }
+
+    .bloco-final-foto img {
+        max-width: 220px;
+    }
+
+    .bloco-final-socials {
+        justify-content: center;
+    }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: #0a0a0a;
+    padding: 32px 40px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 28px;
+}
+
+.footer-copy {
+    font-family: 'CODE', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 24px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
     }
 }
 
