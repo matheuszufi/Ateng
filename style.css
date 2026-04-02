@@ -984,16 +984,20 @@ body {
 }
 
 .diferenciais-modelo {
-    flex: 1;
-    min-height: 400px;
+    flex: 0.8;
+    min-height: 300px;
+    max-height: 350px;
 }
 
 .diferenciais-modelo-titulo {
+    font-family: 'StackSansNotch', sans-serif;
     text-align: center;
-    font-size: 28px;
+    font-size: 42px;
     font-weight: 700;
-    color: #fff;
+    color: #46a59b;
+    font-style: italic;
     margin-bottom: 16px;
+    text-transform: uppercase;
 }
 
 .sketchfab-embed-wrapper {
