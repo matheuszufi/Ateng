@@ -99,7 +99,7 @@
 }
 
 .hero-highlight {
-    font-style: italic;
+    font-style: normal;
     background: linear-gradient(to right, #128077, #0f9689, #128077);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -728,8 +728,8 @@
     }
 
     .dor-cta-btn {
-        font-size: 12px;
-        padding: 12px 24px;
+        font-size: 16px;
+        padding: 24px 32px;
     }
 
     .dor-promo {
