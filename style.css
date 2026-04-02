@@ -73,7 +73,7 @@
     font-family: 'CODE', sans-serif;
     font-size: 15px;
     font-weight: 200;
-    color: #46a59b;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
@@ -92,6 +92,22 @@
     font-family: 'Space Grotesk', serif;
     font-style: italic;
     text-transform: uppercase;
+    background: linear-gradient(to right, #128077, #0f9689, #128077);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-highlight {
+    font-style: italic;
+    background: linear-gradient(to right, #128077, #0f9689, #128077);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle em {
+    font-style: italic;
     background: linear-gradient(to right, #128077, #0f9689, #128077);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,7 +352,7 @@
 .dor-headline {
     font-family: 'CODE', sans-serif;
     font-size: 56px;
-    font-weight: 400;
+    font-weight: 700;
     background: linear-gradient(to bottom, #212121, #454545);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -345,10 +361,10 @@
 }
 
 .dor-headline em {
-    font-family: 'Space Grotesk', serif;
+    font-family: 'CODE', sans-serif;
     font-style: italic;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to right, #128077, #10ac9d, #128077);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -376,7 +392,7 @@
 .dor-cta-btn {
     font-family: 'CODE', sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 700;
     color: #111;
     background: transparent;
     border: 1px solid #111;
@@ -405,7 +421,7 @@
 .dor-promo {
     font-family: 'CODE', sans-serif;
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 700;
     font-style: italic;
     color: #555;
     max-width: 240px;
@@ -483,7 +499,7 @@
     font-family: 'CODE', sans-serif;
     font-size: 14px;
     color: #1f2937;
-    font-weight: 200;
+    font-weight: 700;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     padding: 8px;
@@ -657,18 +673,18 @@
 .dor-fechamento {
     font-family: 'CODE', sans-serif;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 700;
     color: #1a1a1a;
     margin-top: 36px;
     letter-spacing: 0.5px;
 }
 
 .dor-fechamento em {
-    font-family: 'Space Grotesk', serif;
+    font-family: 'CODE', sans-serif;
     font-style: italic;
     text-transform: uppercase;
     color: #46a59b;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
