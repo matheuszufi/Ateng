@@ -413,6 +413,32 @@
     line-height: 1.4;
 }
 
+.dor-video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dor-video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dor-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(211, 211, 211), rgba(211, 211, 211, 0.7));
+    z-index: 1;
+}
+
 .dor-divider {
     width: 1px;
     align-self: stretch;
@@ -650,6 +676,15 @@
         padding: 60px 24px;
     }
 
+    .dor::before {
+        width: 100%;
+    }
+
+    .dor::after {
+        width: 100%;
+        height: 60%;
+    }
+
     .dor-headline {
         font-size: 36px;
     }
@@ -658,6 +693,17 @@
         padding: 0;
         flex-direction: column;
         align-items: center;
+    }
+
+    .dor-video-bg {
+        width: 100%;
+        height: 40%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .dor-video-overlay {
+        background: linear-gradient(to bottom, rgb(211, 211, 211), rgba(211, 211, 211, 0.7));
     }
 
     .dor-cta-btn {
@@ -674,12 +720,6 @@
         height: 1px;
         align-self: auto;
     }
-
-    /* .dor-checklist-wrapper {
-        margin-left: 24px;
-    } */
-
-
 
     .dor-fechamento {
         font-size: 30px;
