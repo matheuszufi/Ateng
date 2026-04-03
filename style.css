@@ -881,7 +881,7 @@ body {
 .diferenciais {
     background: rgba(24, 24, 24, 0.194);
     padding: 80px 40px 60px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .diferenciais-header {
@@ -934,7 +934,7 @@ body {
 .diferenciais-content {
     display: flex;
     gap: 32px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .diferenciais-cards {
@@ -957,6 +957,9 @@ body {
 
 .dif-card-body {
     padding: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .dif-card-number {
@@ -985,8 +988,7 @@ body {
 
 .diferenciais-modelo {
     flex: 0.8;
-    min-height: 300px;
-    max-height: 350px;
+    height: 350px;
 }
 
 .diferenciais-modelo-titulo {
@@ -994,10 +996,15 @@ body {
     text-align: center;
     font-size: 42px;
     font-weight: 700;
-    color: #46a59b;
+    color: #fff;
     font-style: italic;
-    margin-bottom: 16px;
     text-transform: uppercase;
+    background: #128077;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+    padding: 16px 40px;
 }
 
 .sketchfab-embed-wrapper {
@@ -1033,7 +1040,16 @@ body {
     }
 
     .diferenciais-modelo {
-        min-height: 500px;
+        min-height: 150px;
+        max-height: none;
+    }
+
+    .diferenciais-modelo-titulo {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: -40px;
+        font-size: 28px;
+        padding: 14px 24px;
     }
 }
 
