@@ -395,7 +395,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 60px;
 }
 
 .dor-checklist-wrapper {
@@ -882,6 +882,33 @@ body {
     background: rgba(24, 24, 24, 0.194);
     padding: 80px 40px 60px;
     overflow: visible;
+    position: relative;
+}
+
+.diferenciais::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/projects/estrutura-concreto-armado.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.diferenciais::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #e8e8e8, transparent);
+    z-index: -1;
 }
 
 .diferenciais-header {
@@ -942,24 +969,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
+
+
 .dif-card {
-    background: rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.08);
+    background: rgba(70, 165, 155, 0.06);
+    border: 1px solid rgba(70, 165, 155, 0.25);
     overflow: hidden;
-    transition: border-color 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 .dif-card:hover {
     border-color: #46a59b;
+    background: rgba(70, 165, 155, 0.1);
+    box-shadow: 0 4px 12px rgba(70, 165, 155, 0.15), 0 0 0 2px rgba(70, 165, 155, 0.1);
 }
 
 .dif-card-body {
     padding: 24px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
 }
 
 .dif-card-number {
@@ -1396,6 +1427,7 @@ body {
     padding: 0 0 0;
     background: #f0f0f0;
     overflow: hidden;
+    isolation: isolate;
 }
 
 .bloco-final-header {
@@ -1445,7 +1477,24 @@ body {
     align-items: flex-start;
     gap: 48px;
     padding: 40px 40px 80px;
+    border: 1px solid #128077;
+    background: rgba(240, 240, 240, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: relative;
 }
+
+/* .bloco-final-inner::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 20%;
+    background: linear-gradient(135deg, #128077, #0f9689, #46a59b);
+    z-index: -1;
+} */
 
 /* ESQUERDA — Contato */
 .bloco-final-contato {
@@ -1606,8 +1655,10 @@ body {
 .bloco-final-foto {
     flex: 1;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
+    align-self: flex-end;
+    margin-bottom: -80px;
 }
 
 .bloco-final-foto img {
@@ -1645,7 +1696,7 @@ body {
     }
 
     .bloco-final-foto {
-        order: -1;
+        order: 3;
     }
 
     .bloco-final-foto img {
