@@ -950,6 +950,7 @@ body {
     background-clip: text;
     padding-right: 0.15em;
     margin-right: -0.15em;
+        font-size: 56px;
 }
 
 .diferenciais-sub {
@@ -1020,23 +1021,101 @@ body {
 
 .diferenciais-modelo {
     flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.diferenciais-modelo .sketchfab-embed-wrapper {
     height: 350px;
 }
 
-.diferenciais-modelo-titulo {
-    font-family: 'StackSansNotch', sans-serif;
-    text-align: center;
-    font-size: 42px;
-    font-weight: 700;
-    color: #fff;
+.modelo-qrcode {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.modelo-qrcode a {
+    flex-shrink: 0;
+}
+
+.modelo-qrcode img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.modelo-qrcode a:hover img {
+    opacity: 0.8;
+}
+
+.modelo-qrcode-legenda {
+    font-family: 'StackSansText', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
     font-style: italic;
-    text-transform: uppercase;
+    color: #666;
+    line-height: 1.5;
+}
+
+.diferenciais-letreiro {
     background: #128077;
     margin-left: -40px;
     margin-right: -40px;
     margin-top: 40px;
     margin-bottom: -60px;
-    padding: 16px 40px;
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.letreiro-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    animation: letreiro-scroll 20s linear infinite;
+}
+
+.letreiro-item {
+    font-family: 'StackSansNotch', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.letreiro-star {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+@keyframes letreiro-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .diferenciais-letreiro {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: -40px;
+        padding: 14px 0;
+    }
+
+    .letreiro-item {
+        font-size: 28px;
+    }
+
+    .letreiro-star {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .sketchfab-embed-wrapper {
@@ -1074,14 +1153,6 @@ body {
     .diferenciais-modelo {
         min-height: 150px;
         max-height: none;
-    }
-
-    .diferenciais-modelo-titulo {
-        margin-left: -24px;
-        margin-right: -24px;
-        margin-bottom: -40px;
-        font-size: 28px;
-        padding: 14px 24px;
     }
 }
 
