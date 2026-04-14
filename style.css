@@ -1504,7 +1504,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
+}
+
+.cta-final-sub {
+    font-family: 'StackSansText', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #aaa;
+    line-height: 1.6;
+    max-width: 560px;
+}
+
+.cta-final-btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cta-final-caption {
+    font-family: 'StackSansText', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 0.5px;
 }
 
 .cta-final-headline {
