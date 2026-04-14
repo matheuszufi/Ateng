@@ -853,6 +853,32 @@ body {
     letter-spacing: 0.5px;
 }
 
+.virada-checks {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.virada-checks li {
+    font-family: 'StackSansText', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.virada-check-icon {
+    color: #10ac9d;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
 .virada-btn {
     font-family: 'StackSansText', sans-serif;
     font-size: 14px;
