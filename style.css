@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'StackSansText', sans-serif;
     font-weight: 400;
@@ -86,7 +90,7 @@ body {
 
 .hero-title {
     font-family: 'StackSansText', sans-serif;
-    font-size: 76px;
+    font-size: 48px;
     font-weight: 400;
     background: linear-gradient(to bottom, #128077, #0f9689);
     -webkit-background-clip: text;
@@ -112,7 +116,7 @@ body {
     font-family: 'StackSansNotch', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 80px;
+    font-size: 54px;
     background: none;
     -webkit-background-clip: unset;
     -webkit-text-fill-color: #ffffff;
@@ -924,7 +928,7 @@ body {
 .diferenciais {
     background: rgba(24, 24, 24, 0.194);
     padding: 80px 40px 60px;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
 }
 
