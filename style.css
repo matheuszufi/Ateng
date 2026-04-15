@@ -393,6 +393,17 @@ body {
     margin-right: -0.15em;
 }
 
+.dor-subtitulo {
+    font-family: 'StackSansText', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin-bottom: 32px;
+}
+
 .dor-content {
     position: relative;
     display: flex;
@@ -1236,6 +1247,9 @@ body {
 
     .modelo-sketchfab-block {
         flex: none;
+        margin-left: -24px;
+        margin-right: -24px;
+        width: calc(100% + 48px);
     }
 
     .diferenciais-modelo .sketchfab-embed-wrapper {
