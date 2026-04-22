@@ -865,7 +865,7 @@ body {
 .virada-checks {
     list-style: none;
     padding: 12px;
-    margin: 24px 0 0 0;
+    margin: 24px 0 24px 0;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -962,12 +962,17 @@ body {
 
 .diferenciais-tag {
     font-family: 'StackSansNotch', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 700;
-    color: #46a59b;
+    color: #ffffff;
     letter-spacing: 3px;
     display: block;
     margin-bottom: 12px;
+    background: #128077;
+    padding: 12px 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+    text-align: center;
 }
 
 .diferenciais-headline {
@@ -980,6 +985,7 @@ body {
     background-clip: text;
     line-height: 1.2;
     margin-bottom: 12px;
+    margin-top: 40px;
 }
 
 .diferenciais-headline em {
@@ -1273,6 +1279,13 @@ body {
 
     .diferenciais {
         padding: 60px 24px 40px;
+    }
+
+    .diferenciais-tag {
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .diferenciais-headline {
