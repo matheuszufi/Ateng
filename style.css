@@ -334,7 +334,7 @@ body {
     position: relative;
     padding: 60px 0;
     margin-top: 0;
-    background-color: rgba(24, 24, 24, 0.194);
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,7 +363,7 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, rgba(227, 227, 227, 0.85), rgb(211, 211, 211));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgb(211, 211, 211));
     z-index: 1;
 }
 
@@ -734,7 +734,7 @@ body {
     .dor::after {
         width: 100%;
         height: 60%;
-        background: linear-gradient(to bottom, rgba(227, 227, 227, 0.7), rgb(211, 211, 211));
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgb(211, 211, 211));
    
     }
 
@@ -782,9 +782,10 @@ body {
 /* ========== VIRADA / SOLUÃ‡ÃƒO ========== */
 .virada {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 40px;
+    padding: 60px 0;
     text-align: center;
     position: relative;
     box-shadow: 4px 4px 12px #0000008b;
@@ -814,12 +815,15 @@ body {
 
 .virada-inner {
     max-width: 700px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 2;
     gap: 16px;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .virada-tag {
@@ -864,14 +868,20 @@ body {
 
 .virada-checks {
     list-style: none;
-    padding: 12px;
-    margin: 24px 0 24px 0;
-    border-radius: 4px;
+    padding: 40px 40px;
+    margin: 40px 0px;
+    border-radius: 0;
     display: flex;
     flex-direction: column;
-    background-color: rgba(211, 211, 211, 0.4);
+    align-items: center;
+    box-shadow: 4px 4px 96px #ffffff47;
+    background-color: rgba(211, 211, 211, 0.3);
     backdrop-filter: blur(4px);
     gap: 12px;
+    width: 100%;
+    align-self: stretch;
+    position: relative;
+    z-index: 2;
 }
 
 .virada-checks li {
@@ -923,7 +933,7 @@ body {
 
 /* ========== DIFERENCIAIS ========== */
 .diferenciais {
-    background: rgba(24, 24, 24, 0.194);
+    background: rgba(239, 239, 239, 0.4);
     padding: 80px 40px 60px;
     overflow: hidden;
     position: relative;
@@ -962,7 +972,7 @@ body {
 
 .diferenciais-tag {
     font-family: 'StackSansNotch', sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 3px;
@@ -1263,8 +1273,8 @@ body {
     }
 
     .virada-checks {
-        width: 100%;
-        align-self: stretch;
+        padding: 16px 24px;
+        align-items: flex-start;
     }
 
     .virada-checks li {
